@@ -1,0 +1,340 @@
+body {
+  background-color: rgb(240, 239, 239);
+  font-weight: bold;
+  color: black;
+}
+
+
+
+/* Search Bar Table */
+#myInput {
+  background-repeat: no-repeat;
+  font-size: e4eff816px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myInput:hover {
+  box-shadow: 5px 10px 18px rgb(45, 45, 45);
+}
+
+/* Tabel Daftar Tamu */
+#tamu {
+  /* width: 1000px; */
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  /* width: 100%; */
+}
+
+#tamu td,
+#tamu th {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 8px;
+}
+
+#tamu tr:nth-child(even) {
+  background-color: #ebe6e6;
+}
+
+#tamu tr:hover {
+  background-color: rgb(197, 193, 193);
+}
+
+#tamu th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.daftar_tamu {
+  width: 1000px;
+  box-shadow: 5px 10px 18px rgb(45, 45, 45);
+  border-radius: e4eff85px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  background-color: #d9e9f6;
+  padding: 20px;
+}
+
+.daftar_tamu h1 {
+  box-shadow: 5px 10px 18px rgb(45, 45, 45);
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 5px;
+  width: 270px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+
+/* Loading Page */
+
+
+/* Form Tamu */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=tel] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(240, 237, 237);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form_tamu {
+  width: 1000px;
+  box-shadow: 5px 10px 18px rgb(45, 45, 45);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  background-color: #817f7f;
+  padding: 20px;
+}
+
+.form_tamu h1 {
+  box-shadow: 5px 10px 18px rgb(45, 45, 45);
+  font-size: 30px;
+  margin: 50px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 5px;
+  width: 270px;
+  border-radius: 15px;
+  background-color: #e4eff8;
+}
+
+
+
+/* Loader Page */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+/*Text Loading */
+#loader-wrapper h2{
+ display: block;
+ position: relative;
+ top: 13%;
+ font-size: 50px;
+ font-family: Brush Script Std;
+ text-align: center;
+ color: blue;
+ z-index: 1001;
+ animation: mymove 1.5s infinite alternate;
+ }
+
+ #loader {
+  display: block;
+  position: relative;
+  left: 49%;
+  top: 20%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: -75px 0 0 -75px;
+  border: 5px solid transparent;
+  border-top-color:#3498db; 
+  border-bottom-color: #3498db; 
+  z-index: 1001;
+    animation: spin 1s linear infinite ;
+}
+
+#loader:before {
+ content: "";
+ position: absolute;
+ top: 10px;
+ left: 10px;
+ right: 10px;
+ bottom: 10px;
+ border: 5px solid transparent;
+ border-radius: 50%;
+ border-left-color: #e74c3c;
+ border-right-color:  #e74c3c;
+ z-index: 1001;
+ animation: spin 0.5s ease-in-out infinite ;
+ }
+
+#loader:after {
+ content: "";
+ position: absolute;
+ top: 40px;
+ left: 40px;
+ right: 40px;
+ bottom: 40px;
+ border-radius: 50%;
+ border: 5px solid transparent;
+ border-top-color: #f9c922;
+ border-bottom-color:  #f9c922;
+ z-index: 1001;
+ animation: spin 1s ease infinite ;
+ }
+
+ #loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #222;
+  z-index: 1000;
+}
+
+#loader-wrapper .loader-section.section-left {
+ left: 0;
+ }
+
+#loader-wrapper .loader-section.section-right {
+   right: 0;
+}
+
+.loaded #loader-wrapper .loader-section.section-left {
+  transform: translateX(-100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.loaded #loader-wrapper .loader-section.section-right {
+  transform: translateX(100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.loaded h2{
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.loaded #loader-wrapper {
+ visibility: hidden;
+ transform: translateY(-100%);
+ transition: all 0.3s 1s ease-out;
+ }
+
+
+
+  @keyframes mymove{
+    0%{
+       opacity: 100; 
+    }
+  
+    100%{
+       opacity: 0;
+    }
+  }
+
+  @keyframes spin {
+  0% {
+      transform: rotate(0deg) ;
+    
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
+/* Responsive Home Page Not Include Navbar */
+@media screen and (max-width: 1040px) {
+  .daftar_tamu {
+    width: 100%;
+    border-radius: 15px;
+    margin: 25px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: #9b7c6d;
+    padding: 20px;
+    overflow-x: auto;
+  }
+
+  .form_tamu {
+    width: 500px;
+    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: #817f7f;
+    padding: 20px;
+  }
+}
